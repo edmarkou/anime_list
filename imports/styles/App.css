@@ -1,0 +1,122 @@
+.headerButton {
+  height: 50px;
+  width: 80px;
+  margin-left: 10px;
+  background-color: #adbabd;
+  border-radius: 5px;
+  border-style: none;
+  outline: none;
+  color: #022b36;
+  font-weight: bold;
+}
+.headerButton:hover {
+  background-color: azure;
+  cursor: pointer;
+}
+.headerText {
+  position: absolute;
+  left: 15px;
+  top: 0px;
+  color: #adbabd;
+  font-style: oblique;
+}
+.header {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  background-color: #022b36;
+  justify-content: flex-end;
+  align-items: center;
+}
+.formButton {
+  width: 320px;
+  background-color: #022b36;
+  outline: none;
+  border-style: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #adbabd;
+}
+.formButton:hover {
+  cursor: pointer;
+  background-color: #0000b3;
+}
+.searchContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchInput {
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-width: 2px;
+  border-color: #022b36;
+  border-style: solid;
+  width: 50%;
+  outline: none;
+}
+.searchButton {
+  padding: 12px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #022b36;
+  width: 100px;
+  outline: none;
+  border-style: none;
+  color: #adbabd;
+}
+.searchButton:hover {
+  background-color: #0000b3;
+  cursor: pointer;
+}
+.tabButton {
+  width: 25%;
+  background-color: #022b36;
+  color: #adbabd;
+  height: 50px;
+  outline: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff
+}
+.tabButton:hover {
+  cursor: pointer;
+}
+.activeTab {
+  background-color: #411c5f;
+}
+
+.resultsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.results {
+  display: inline-flex;
+  margin: 5px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  border-width: 1px;
+  border-color: #022b36;
+  border-style: solid;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 5px #545454;
+}
+.itemButton {
+  height: 30px;
+  background-color: #022b36;
+  border-style: none;
+  outline: none;
+  color: #adbabd;
+}
+.itemButton:hover {
+  background-color: #adbabd;
+  color: #022b36;
+  cursor: pointer;
+}
