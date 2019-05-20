@@ -42,7 +42,7 @@ class Home extends React.Component {
     Meteor.call('searchAnime', genre, query, number, (err, res) => {
       if (err) console.log(err);
       else {
-        this.setState({results: res})
+        this.setState({results: res, page: number});
       }
     });
   }
@@ -113,6 +113,27 @@ class Home extends React.Component {
             )
           })}
         </div>
+        {this.state.results.data.length !== 0 ? 
+          <div className="searchContainer">
+            {this.state.page - 1 > 0 ? 
+              <button 
+                onClick={() => this.nextPage(this.state.page - 1)}
+                className="nextPage left"
+              >
+                {this.state.page - 1}
+              </button> : null
+            }
+            <span className="currentPage">{this.state.page}</span>
+            {this.state.page + 1 <= this.state.results.maxPage ? 
+              <button 
+                onClick={() => this.nextPage(this.state.page + 1)}
+                className="nextPage right"
+              >{
+                this.state.page + 1}
+              </button> : null
+            }
+          </div> : null
+        }
       </div>
     );
   }
