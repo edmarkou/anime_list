@@ -46,3 +46,5 @@ The system's main functionality (in the Main view) works as one page app, where 
 In second view (Login view) users can login with their provided credentials.
 In third view (Register view) users can register to the system.
 In the fourth view (List view) a user can check his private list of items he added, remove them.
+
+- https://wireframe.cc/QOua0V
